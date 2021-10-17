@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Xello-hao.
-- 👀 I’m interested in Python and C#.
+- 👀 I’m interested in Python,go and C#.
 - 🌱 I’m currently learning Python spider and correlative skill.
 
 
