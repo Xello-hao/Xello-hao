@@ -502,7 +502,7 @@ func main()  {
 
 }*/
 //---------------------------------------------------
-/*import "fmt"
+import "fmt"
 
 func summary(s []int,c chan int){
 	sum:= 0
@@ -523,4 +523,4 @@ func main()  {
 	fmt.Println(x,y,x+y)
 
 
-}*/
+}
