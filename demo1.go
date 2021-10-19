@@ -538,7 +538,7 @@ func main(){
 	fmt.Println(<-ch)
 	fmt.Println(<-ch)
 }*/
-//-----------------------------------------------不理解
+//----------------------------------------
 //import "fmt"
 //
 //func fibonacci(n int,c chan int){
