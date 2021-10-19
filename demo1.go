@@ -523,4 +523,61 @@ func main()  {
 	fmt.Println(x,y,x+y)
 
 
+}
+
+*/
+//给通道设置缓冲区
+/*import "fmt"
+
+func main(){
+	//给通道设置了一个int类型的缓冲区，缓冲区大小为2，缓冲区大小的意义是指缓冲区可以存放同类的元素的个数。
+	ch := make(chan int,2)
+	ch<-1
+	ch<-2
+
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+}*/
+//-----------------------------------------------不理解
+//import "fmt"
+//
+//func fibonacci(n int,c chan int){
+//	x:=0
+//	y:=1
+//	for i:=0;i<n;i++{
+//		c<-x
+//		//注意，x,y = y,x+y 同时赋值和x = y, y = x+y 分别赋值是不同的结果，
+//		//分别赋值时，y = x+y 计算会取本次x = y的计算结果，而不是上次x = y的结果
+//		//x,y = y,x+y赋值时，x和y只取上次赋值的x和y的结果进行表达式计算，而不能取本次x或者y的表达式结果进行赋值。
+//		x,y = y,x+y
+//	}
+//	close(c)
+//}
+//
+//func main()  {
+//	//创建一个通道C，缓冲区大小为10
+//	c:=make(chan int,10)
+//	//cpa()函数返回指定类型的容量，类似于len()，根据类型的不同，返回的意义不同
+//	//cap(c)返回的是通道c的容量，是10
+//	go fibonacci(cap(c),c)
+//
+//	for i:= range c{
+//			fmt.Println(i)
+//	}
+//
+//}
+//---------通道的关闭与遍历
+/*import "fmt"
+
+func main()  {
+	ch :=make(chan int,3)
+	ch <-100
+	ch <-200
+	ch <-300
+
+
+	close(ch)
+	for i:= range ch{
+		fmt.Println(i)
+	}
 }*/
